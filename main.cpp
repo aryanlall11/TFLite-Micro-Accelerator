@@ -64,7 +64,7 @@ int main(void)
 
   error_reporter->Report("STM32 TensorFlow Lite test");
 
-  model = tflite::GetModel(model);   // model is the C byte array variable in the "model.h" file
+  model = tflite::GetModel(my_model);   // my_model is the C byte array variable in the "model.h" file
   if (model->version() != TFLITE_SCHEMA_VERSION)
   {
   	error_reporter->Report("Model version does not match Schema");
